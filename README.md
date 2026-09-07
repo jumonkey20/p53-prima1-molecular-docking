@@ -1,7 +1,7 @@
 # Biomedical Research & Molecular Docking Pipeline
 
 ## 👋 About This Project
-Welcome! I am an undergraduate Biomedical Science student at the University of Surrey. This repository showcases my independent exploration into **bioinformatics and structural biology**, specifically focusing on molecular docking simulations. 
+Welcome! My name is Ali Al-Jumaili and I am an undergraduate Biomedical Science student at the University of Surrey. This repository showcases my independent exploration into **bioinformatics and structural biology**, specifically focusing on molecular docking simulations. 
 
 Rather than relying purely on complex terminal-based scripting, this project demonstrates a streamlined, user-friendly virtual screening workflow using **PyRx (AutoDock Vina GUI)**. Here, I investigate ligand-protein binding interactions—such as docking PRIMA-1 against target receptors like 1TUP—to analyze binding affinities and structural conformations efficiently.
 
