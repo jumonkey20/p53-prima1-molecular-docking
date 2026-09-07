@@ -10,7 +10,7 @@ Rather than relying purely on complex terminal-based scripting, this project dem
 ## 📂 Repository Structure
 
 ```text
-biomed-research/
+p53-prima1-molecular-docking/
 ├── data/
 │   ├── ligands/          # Input ligand files (e.g., SDF / PDBQT)
 │   ├── pdb_structures/   # Target receptor protein files (e.g., 1TUP)
