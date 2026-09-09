@@ -81,6 +81,13 @@ body {
     border: 1px solid #e2e8f0;
 }
 
+/* Vertically Stack Link Buttons */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -91,7 +98,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    transition: background 0.2s;
+    transition: background 0.2s, opacity 0.2s;
 }
 
 .github-btn {
@@ -101,6 +108,16 @@ body {
 
 .github-btn:hover {
     background-color: #1e293b;
+}
+
+/* Styled LinkedIn Brand Accent Color */
+.linkedin-btn {
+    background-color: #0077b5;
+    color: #ffffff;
+}
+
+.linkedin-btn:hover {
+    opacity: 0.9;
 }
 
 .main-content {
@@ -120,26 +137,31 @@ body {
     font-size: 15px;
 }
 
-/* Module Grid Design */
 .module-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .module-card {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 14px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: 600;
-    color: #334155;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
 }
 
-/* Project Cards Grid */
+.module-icon {
+    font-size: 24px;
+    color: #0ea5e9;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -226,4 +248,5 @@ body {
     .container { flex-direction: column; }
     .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; }
     .main-content { padding: 30px 20px; }
+    .module-grid { grid-template-columns: 1fr; }
 }
