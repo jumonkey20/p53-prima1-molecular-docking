@@ -51,10 +51,10 @@ body {
     margin-right: 6px;
 }
 
-.bio h3 {
-    font-size: 15px;
+.bio h3, .skills h3 {
+    font-size: 14px;
     color: #334155;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -65,13 +65,29 @@ body {
     color: #475569;
 }
 
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -100,10 +116,30 @@ body {
 
 .section-intro {
     color: #64748b;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-size: 15px;
 }
 
+/* Module Grid Design */
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.module-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+/* Project Cards Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -154,15 +190,25 @@ body {
     white-space: nowrap;
 }
 
-.empty-card .tech-tag {
-    background-color: #f1f5f9;
-    color: #64748b;
+.tech-tag.spec {
+    background-color: #f0f9ff;
+    color: #0284c7;
 }
 
 .project-card p {
     font-size: 14px;
     color: #475569;
     margin-bottom: 16px;
+}
+
+.protocol-list {
+    padding-left: 16px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.protocol-list li {
+    margin-bottom: 8px;
 }
 
 .repo-link {
@@ -176,40 +222,8 @@ body {
     text-decoration: underline;
 }
 
-.placeholder-text {
-    font-size: 13px;
-    color: #94a3b8;
-    font-style: italic;
-}
-
 @media (max-width: 768px) {
     .container { flex-direction: column; }
     .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; }
     .main-content { padding: 30px 20px; }
-}
-
-/* Skills Section Styling */
-.skills h3 {
-    font-size: 15px;
-    color: #334155;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.skill-badge {
-    background-color: #f1f5f9;
-    color: #475569;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 6px;
-    border: 1px solid #e2e8f0;
 }
